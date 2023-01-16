@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+html {
+  font-size: 20px;
+  font-family: Raleway;
+  scroll-behavior: smooth; /* magia :) */
+}
+
+body {
+  background-color: darkcyan;
+}
+
+h2 {
+  color: lightgreen;
+  background-color: black;
+}
+
+
+#toys {
+  background-color: lightgoldenrodyellow;
+}
+
+#video-games {
+  background-color: lightgreen;
+}
+
+#board-games {
+  background-color: lightcoral;
+}
+
+
+/* .todos los li dentro de #toys */
+#toys li {
+  color: darkorange
+}
+
+#video-games li {
+  color: darkgreen
+}
+
+#board-games li {
+  color: darkred;
+}
+
+.products {
+  font-size: 50px;
+}
+
+
+.products li {
+  font-size: 2rem;
+  /* rem es relacion al tamaño de fuente base */
+  /* em es relacion al tamaño de la fuente del padre */
+  /* % es simplemente relacion al tamaño total del padre */
+  text-align: center;
+  list-style-position: inside;
+  /* list-style-type: none; */
+}
+
+.products h2 {
+  font-size: 3rem;
+  text-decoration: underline;
+  /* font-family: Arial, Helvetica, sans-serif */
+  text-shadow: 3px 3px darkgrey;
+  text-align: center;
+}
+
+
+
+
+/* BOX MODEL */
+.products {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(44, 41, 41);
+
+  /* margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 40px; */
+
+  margin: 80px;
+  /* margin: 50px 40px 10px 20px; */
+
+  padding: 15px;
+
+}
+
+body {
+  background-image: url("bg2.jpg");
+  /* background-size: cover; */
+}
+
+
+nav a {
+  color: rgb(23, 19, 19);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  position: fixed;
+  /* esto nos habilita a trabajar con propiedades top, left, right, bottom */
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  height: 40px;
+}
+
+#toys {
+  margin-top: 120px
+}
+
+
+/* todas las etiquetas de tipo a pero solo cuando el cursos pase sobre ellas */
+a:hover {
+  color: magenta
+}
+
+a:active {
+  color: green
+}
+
+/* todas las etiquetas de li, solo la primera letra, aplica estos estilos */
+li::first-letter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black
+}
+
+li::marker {
+  color: brown;
+  content: "🤖 ";
+}
